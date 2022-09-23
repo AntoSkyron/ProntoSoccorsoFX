@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="414.0" prefWidth="554.0" style="-fx-background-color: #278e3e;" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GraficoController">
+   <children>
+      <LineChart fx:id="LineChart" layoutX="49.0" layoutY="56.0" prefHeight="340.0" prefWidth="456.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="x" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" prefHeight="185.0" prefWidth="28.0" side="LEFT" tickLabelFill="WHITE" upperBound="35.0" />
+        </yAxis>
+      </LineChart>
+      <Text fx:id="testo" fill="WHITE" layoutX="140.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEDIA PAZIENTI GIORNALIERA" wrappingWidth="291.05999755859375">
+         <font>
+            <Font name="UniSansHeavyCAPS" size="21.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+      </Text>
+   </children>
+</AnchorPane>
